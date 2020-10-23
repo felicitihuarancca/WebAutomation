@@ -54,7 +54,7 @@ public class HomePage extends BasePage {
      */
     public SearchPage search(String word) {
         log.info("Set value: " + word);
-        sendElementText(searchButton, word);
+        sendElementText(searchField, word);
         log.info("click");
         clickElement(searchButton);
         return new SearchPage(getDriver());
